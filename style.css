@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.overlay::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay {
+    background: url("images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+
+.overlay > * {
+    z-index: 10;
+    position: relative;
+}
+
+.no-shadows {
+    box-shadow: none !important;
+}
+
+nav {
+    font-family: "Alata", sans-serif;
+}
+
+header h1 {
+    font-family: "Josefin Sans", sans-serif;
+    color: #fff;
+    border: 6px solid #fff;
+    display: inline-block;
+    padding: 1.5rem;
+    margin-top: 13%;
+    font-weight: 300;
+}
+
+.relative {
+    position: relative;
+}
+
+section {
+    margin-top: 10vh;
+}
+
+.moveme {
+    position: absolute !important;
+    top: 33%;
+    left: -25px;
+}
+
+.hidefordesktop {
+    display: none;
+}
+
+/* .moveme {
+    margin-top: 140px;
+
+    display: inline-block;
+} */
+
+.moveme h2,
+.moveme p {
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.moveme h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+
+.moveme p {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin-top: 20px;
+    background-color: #fff !important;
+    color: black !important;
+    border: 2px solid black !important;
+    box-shadow: none !important;
+    padding: 0 40px !important;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+}
+
+.img1 {
+    background: url(images/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: 400px;
+}
+.img2 {
+    background: url(images/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: 400px;
+}
+.img3 {
+    background: url(images/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: 400px;
+}
+.img {
+    background: url(images/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: 500px;
+    position: relative;
+}
+
+.img > * {
+    z-index: 10;
+    position: relative;
+}
+
+.img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.img-text {
+    position: absolute !important;
+    top: 350px !important;
+    left: 20px !important;
+    display: inline-block;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem !important;
+    justify-content: center !important;
+    color: #fff;
+}
+
+.img1 {
+    background: url(images/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: 500px;
+    position: relative;
+}
+.img2 {
+    background: url(images/desktop/image-night-arcade.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: 500px;
+    position: relative;
+}
+.img3 {
+    background: url(images/desktop/image-soccer-team.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: 500px;
+    position: relative;
+}
+.img4 {
+    background: url(images/desktop/image-grid.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: 500px;
+    position: relative;
+}
+.img5 {
+    background: url(images/desktop/image-from-above.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: 500px;
+    position: relative;
+}
+.img6 {
+    background: url(images/desktop/image-pocket-borealis.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: 500px;
+    position: relative;
+}
+.img7 {
+    background: url(images/desktop/image-curiosity.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: 500px;
+    position: relative;
+}
+.img8 {
+    background: url(images/desktop/image-fisheye.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: 500px;
+    position: relative;
+}
+
+.grid h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 670px) {
+    header {
+        min-height: 500px;
+    }
+
+    .hidefordesktop {
+        display: block;
+    }
+
+    .hidefordesktop img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1828px) {
+    .hideformobile {
+        display: none;
+    }
+
+    .hidefordesktop {
+        display: block;
+    }
+
+    .hidefordesktop img {
+        width: 100%;
+    }
+}
