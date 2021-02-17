@@ -23,7 +23,7 @@
     <header class="overlay">
       <!-- Navbar -->
       <nav class="nav-wrapper transparent no-shadows">
-        <div class="container">
+        <div class="container navmargin">
           <a href="" class="brand-logo"><img src="images/logo.svg" alt=""></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#">About</a></li>
@@ -35,7 +35,7 @@
         </div>
       </nav>
       <div class="container">
-        <h1>IMMERSIVE<br>EXPERIENCES<br>THAT DELIVER</h1>
+        <h1 class="header-bigtext">IMMERSIVE<br>EXPERIENCES<br>THAT DELIVER</h1>
       </div>
         
     </header>
@@ -62,7 +62,7 @@
             <img src="images/desktop/image-interactive.jpg" alt="">
           </div>
           <div class="col s12 m12 l12">
-            <h2>THE LEADER IN INTERACTIVE VR</h2>
+            <h2 class="featuretext">THE LEADER IN INTERACTIVE VR</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis tempore, quos natus est nam suscipit, amet cupiditate harum exercitationem labore alias dolorum, porro quo ipsum.</p>
           </div>
         </div>
@@ -121,10 +121,10 @@
       <footer class="page-footer black darken-4">
         <div class="container">
           <div class="row">
-            <div class="col s12 l4">
+            <div class="col s12 l4" id="foot1">
               <img src="images/logo.svg" alt="">
             </div>
-            <div class="col l4 offset-l4 right-align">
+            <div class="col s12 l4 offset-l4 right-align" id="foot2">
               <a href="#" class="grey-text text-lighten-3"><i class="fab fa-facebook"></i>
                 <a href="#" class="grey-text text-lighten-3"><i class="fab fa-twitter"></i>
                 <a href="#" class="grey-text text-lighten-3"><i class="fab fa-pinterest"></i>
@@ -134,14 +134,14 @@
         </div>
         <div class="row footer-copyright black darken-4">
           <div class="container">
-            <div class="col l6 bottom-links left-align">
+            <div class="col s12 l6 bottom-links left-align" id="foot3">
               <a class="push" href="">About</a>
               <a class="push" href="">Careers</a>
               <a class="push" href="">Events</a>
               <a class="push" href="">Products</a>
               <a class="push" href="">Support</a>
             </div>
-            <div class="col l4 offset-l2 right-align copy">
+            <div class="col s12 l4 offset-l2 right-align copy" id="foot4">
               &copy; 2021 Loopstudios. All rights reserved
             </div>
           </div>
@@ -150,8 +150,28 @@
     </section>
 
 
+    
+
   
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <script>
+      var element = document.getElementById("foot1");
+      var element2 = document.getElementById("foot2");
+      var element3 = document.getElementById("foot3");
+      var element4 = document.getElementById("foot4");
+      
+
+      const mediaQuery = window.matchMedia('(max-width: 480px) and (min-width: 320px)')
+      const mediaQuery2 = window.matchMedia('(max-width: 768px) and (min-width: 481px)')
+
+      if(mediaQuery.matches || mediaQuery2.matches){
+        element.classList.add("center");
+        element2.classList.add("center");
+        element3.classList.add("center");
+        element4.classList.add("center");
+      }
+  </script>
 </body>
 </html>
